@@ -1,0 +1,8 @@
+<H1>Hello, welcome to the login</H1>
+
+<form action="/login/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+    <input type="hidden" name="next" value="/success" />
+</form>
